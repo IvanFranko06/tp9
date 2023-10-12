@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "LOGIN";
+}
+
+<h1>BIENVENIDOS</h1>
+
+<form action='@Url.Action("login")' method="post">
+ 
+  <div class="container">
+    <label for="username"><p>Username</p></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><p>Password</p></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <button type="submit">Login</button>
+
+  </div>
+    <a href='@Url.Action("olvidepass")'>Olvide contraseña</a>
+</form>
